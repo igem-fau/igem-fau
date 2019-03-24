@@ -1,0 +1,1066 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v3.8.5">
+    <title>iGEM Collaboration Meetup</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+
+    <!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="assets/particles.js"></script>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <link rel="preload" as="font" href="assets/fonts/Inter-UI-upright.var.woff2" type="font/woff2"
+        crossorigin="anonymous">
+    <link rel="preload" as="font" href="assets/fonts/Inter-UI.var.woff2" type="font/woff2" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="assets/main.css">
+    <script src="assets/main.js" charset="utf-8"></script>
+</head>
+
+<body>
+
+    <style>
+        body {
+            font-family: "Inter", "Inter UI", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        }
+
+        .link-special {
+            margin-top: -2px;
+            margin-left: 10px;
+            color: #C1F873 !important;
+            border: 2px solid #C1F873;
+            border-radius: 6px;
+        }
+
+        #stickyHeader .link-special {
+            margin-top: -2px;
+            margin-left: 10px;
+            color: green !important;
+            border: 2px solid green;
+            border-radius: 6px;
+        }
+
+        .navbar {
+            background: white;
+            padding: 1rem 1rem;
+        }
+
+        #header .navbar {
+            background: transparent;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            color: white;
+        }
+
+        #header .navbar a {
+            color: white;
+        }
+
+        .jumbotron {
+            border-radius: 0;
+            margin-top: -75px;
+            height: 100vh;
+            background: url('assets/images/bg.png') no-repeat;
+            color: white;
+            z-index: -100;
+        }
+
+        .vertical-center {
+            position: absolute;
+            text-align: center;
+            width: 100%;
+            top: 50%;
+            left: 0%;
+            transform: translate(0%, -50%);
+            -webkit-transform: translate(0%, -50%);
+            z-index: 0;
+        }
+    </style>
+
+    <div id="header">
+        <div class="navbar-container">
+            <nav class="navbar navbar-expand-lg navbar-light" data-overlay data-sticky="top">
+
+                <div class="container">
+
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <ul class="navbar-nav mr-auto"></ul>
+                        <ul class="navbar-nav">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#about">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#speakers">Speakers</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#schedule">Schedule</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#workshops">Workshops</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#location">Location</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link link-special" href="#">Registration opens soon</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </nav>
+        </div>
+    </div>
+
+    <style>
+    .logo {
+        width: 500px;
+        height: 195px;
+        background: url('assets/images/logo.png');
+    }
+    </style>
+
+    <div id="stickyHeader" class="sticky-off">
+        <div class="navbar-container sticky-top">
+            <nav class="navbar navbar-expand-lg navbar-light" data-overlay data-sticky="top">
+
+                <div class="container">
+
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <ul class="navbar-nav mr-auto"></ul>
+                        <ul class="navbar-nav">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#about">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#speakers">Speakers</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#schedule">Schedule</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#workshops">Workshops</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#location">Location</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link link-special" href="#">Registration opens soon</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </nav>
+        </div>
+    </div>
+
+    <div class="jumbotron" style="padding: 0;">
+        <div id="particles-js" style="width: 100%; height: 100vh;"></div>
+        <div class="container">
+            <div class="vertical-center">
+                <h1 class="display-4 logo" style="display: inline-block"></h1>
+                <p class="lead">17.-19.05.2019</p>
+                <p>Erlangen, Germany</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    particlesJS.load('particles-js', 'assets/particles.json', function() {
+        console.log('callback - particles.js config loaded');
+    });
+    </script>
+
+    <!-- ABOUT -->
+    <style>
+        .about {
+            margin-bottom: 50px;
+            background-color: white;
+        }
+
+        .container {
+            z-index: 9001;
+        }
+    </style>
+
+    <a id="about"></a>
+    <div class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8" style="padding-right: 50px;">
+                    <h2>Gather around, start working together</h2>
+
+                    <div class="about-description">
+                        iGEM, although being a competition, it lives from its big community and all the collaborations. 
+                        For this reason we want to meet all of you as soon as possible and start working together! 
+                        Come join us in Erlangen, Germany for a weekend of socializing, interesting talks, workshops,
+                        poster sessions and our collaboration speed-dating. <br/><br />
+                        Oh, and Franconia is known worldwide for its amazing beer.
+                    </div>
+                </div>
+
+                <!--<div class="col-lg-4">
+                    <div>SPONSORED BY:</div>
+                </div>-->
+            </div>
+        </div>
+    </div>
+
+
+    <!-- SPEAKERS -->
+    <style>
+        .speaker-list {
+            height: 400px;
+            margin: 50px;
+        }
+
+        .speakers h1 {
+            display: inline-block;
+            color: #F37408;
+            /*background-image:linear-gradient(90deg, #0FE6F1, #CFF968);*/
+            /*background-image: linear-gradient(to right, #DA1AE6, #140CF7);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;*/
+        }
+
+        .speaker {
+            width: 300px;
+            margin: 5px;
+            transition: all .2s ease-in-out;
+
+            background: #D8D8D8;
+            box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.05);
+        }
+
+        .speaker:hover {
+            width: 310px;
+            margin: 0px;
+
+            background: #D8D8D8;
+            box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.1);
+        }
+
+        .speaker-name {
+            margin-top: 20px;
+            font-weight: bold;
+            text-align: center;
+        }
+    </style>
+
+    <a id="speakers"></a>
+    <div class="speakers">
+        <div class="container">
+
+            <h1>Speakers</h1>
+
+            <div class="speaker-list row">
+                <div class="col-lg-4" style="text-align: center">
+                    <div style="height: 310px">
+                        <img src="assets/images/blank.png" class="speaker rounded-lg" />
+                    </div>
+                    <div class="speaker-name">Prof. Dr. Thomas Winkler</div>
+                    <div class="speaker-topic">Immunology</div>
+                </div>
+                <div class="col-lg-4" style="text-align: center">
+                    <div style="height: 310px">
+                        <img src="assets/images/blank.png" class="speaker rounded-lg" />
+                    </div>
+                    <div class="speaker-name">Prof. Dr. Andreas Winterpacht</div>
+                    <div class="speaker-topic">Epigenetics</div>
+                </div>
+                <div class="col-lg-4" style="text-align: center">
+                    <div style="height: 310px">
+                        <img src="assets/images/blank.png" class="speaker rounded-lg" />
+                    </div>
+                    <div class="speaker-name">Prof. Dr. Matthias Peipp</div>
+                    <div class="speaker-topic">Bi-functional antibodies</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- SCHEDULE -->
+    <style>
+        .schedule {
+            /*background-image: linear-gradient(to right, #DA1AE6, #140CF7);*/
+            background: url('assets/images/bg-schedule.png') no-repeat;
+            /*background-position: center center;*/
+            background-size: auto;
+            z-index: 9001;
+        }
+
+        .schedule .row {
+            margin-bottom: 30px !important;
+        }
+
+        .schedule-list {
+            margin: 50px 0;
+        }
+
+        .schedule h1 {
+            color: #8104A0;
+            margin-bottom: 10px;
+        }
+
+        .schedule-day {
+            position: -webkit-sticky;
+            position: sticky;
+            top: 90px;
+        }
+
+        .schedule-day h2 {
+            color: #1E18D7;
+            font-weight: bold;
+        }
+
+        .schedule .accordion {
+            margin-top: -10px;
+            margin-bottom: 30px;
+            background: white;
+            box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.05);
+        }
+
+        .schedule .accordion:hover {
+            margin-top: -10px;
+            margin-bottom: 30px;
+            background: white;
+            box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.1);
+        }
+
+        .collapse-indicator {
+            float: right;
+            margin-top: 4px;
+            transition: all .2s ease-in-out;
+
+            color: green;
+        }
+
+        [data-toggle="collapse"] .collapse-indicator {
+            color: #8A16B2;
+
+            -webkit-transform: rotate(0deg);
+            -moz-transform: rotate(0deg);
+            -ms-transform: rotate(0deg);
+            -o-transform: rotate(0deg);
+            transform: rotate(0deg);
+        }
+
+        [data-toggle="collapse"].collapsed .collapse-indicator {
+            color: #E115A3;
+
+            -webkit-transform: rotate(-45deg);
+            -moz-transform: rotate(-45deg);
+            -ms-transform: rotate(-45deg);
+            -o-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+        }
+
+        .card-header button {
+            text-align: left;
+            width: 84%;
+        }
+
+        .schedule .card {
+            border-radius: 0;
+            border: 0;
+            background: white;
+        }
+
+        .schedule .card-header {
+            background: white;
+        }
+
+        .schedule-time {
+            display: inline-block;
+            width: 15%;
+        }
+    </style>
+
+    <a id="schedule"></a>
+    <div class="schedule">
+        <div class="container">
+            <h1>Schedule</h1>
+
+            <div class="schedule-list">
+                <div class="row">
+                    <div class="col-3" style="padding-bottom: 30px;">
+                        <div class="schedule-day">
+                            <h2>Day 1</h2>
+                            <div class="schedule-weekday">Friday</div>
+                            <div class="schedule-date">17.05.2019</div>
+                        </div>
+                    </div>
+
+                    <div class="schedule-programme col-9">
+
+                        <div class="accordion" id="accordion-day-one">
+                            <div class="card">
+                                <div class="card-header" id="headingOne">
+                                    <h2 class="mb-0">
+                                        <span class="schedule-time">15:00</span><!-- -->
+                                        <button class="btn btn-link collapsed" type="button"> <!--data-toggle="collapse"
+                                            data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">-->
+                                            Registration
+                                            <!--<i class="collapse-indicator fas fa-times" aria-hidden="true"></i>-->
+                                        </button>
+                                    </h2>
+                                </div>
+
+                                <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                                    data-parent="#accordion-day-one">
+                                    <div class="card-body">
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                        richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
+                                        brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                                        sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                                        shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson
+                                        cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                                        Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt
+                                        you probably haven't heard of them accusamus labore sustainable VHS.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card-header" id="headingTwo">
+                                    <h2 class="mb-0">
+                                        <span class="schedule-time">17:30</span>
+                                        <button class="btn btn-link collapsed" type="button"><!--data-toggle="collapse"
+                                            data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">-->
+                                            Opening Ceremony
+                                            <!--<i class="collapse-indicator fas fa-times" aria-hidden="true"></i>-->
+                                        </button>
+                                    </h2>
+                                </div>
+
+                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                    data-parent="#accordion-day-one">
+                                    <div class="card-body">
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                        richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
+                                        brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                                        sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                                        shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson
+                                        cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                                        Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt
+                                        you probably haven't heard of them accusamus labore sustainable VHS.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card-header" id="headingThree">
+                                    <h2 class="mb-0">
+                                        <span class="schedule-time">18:00</span>
+                                        <button class="btn btn-link collapsed" type="button"> <!--data-toggle="collapse"
+                                            data-target="#collapseThree" aria-expanded="true"
+                                            aria-controls="collapseThree">-->
+                                            City Tour
+                                            <!--<i class="collapse-indicator fas fa-times" aria-hidden="true"></i>-->
+                                        </button>
+                                    </h2>
+                                </div>
+
+                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                    data-parent="#accordion-day-one">
+                                    <div class="card-body">
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                        richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
+                                        brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                                        sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                                        shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson
+                                        cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                                        Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt
+                                        you probably haven't heard of them accusamus labore sustainable VHS.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-3" style="padding-bottom: 30px;">
+                        <div class="schedule-day">
+                            <h2>Day 2</h2>
+                            <div class="schedule-weekday">Saturday</div>
+                            <div class="schedule-date">18.05.2019</div>
+                        </div>
+                    </div>
+
+                    <div class="schedule-programme col-9">
+                        <div class="accordion" id="accordion-day-two">
+                            <div class="card">
+                                <div class="card-header" id="headingTwentyOne">
+                                    <h2 class="mb-0">
+                                        <span class="schedule-time">08:30</span>
+                                        <button class="btn btn-link collapsed" type="button"> <!--data-toggle="collapse"
+                                            data-target="#collapseTwentyOne" aria-expanded="true"
+                                            aria-controls="collapseTwentyOne">-->
+                                            Breakfast
+                                        </button>
+                                    </h2>
+                                </div>
+
+                                <div id="collapseTwentyOne" class="collapse" aria-labelledby="headingTwentyOne"
+                                    data-parent="#accordion-day-two">
+                                    <div class="card-body">
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                        richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
+                                        brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                                        sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                                        shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson
+                                        cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                                        Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt
+                                        you probably haven't heard of them accusamus labore sustainable VHS.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingTwentyTwo">
+                                    <h2 class="mb-0">
+                                        <span class="schedule-time">09:30</span>
+                                        <button class="btn btn-link collapsed" type="button"> <!--data-toggle="collapse"
+                                            data-target="#collapseTwentyTwo" aria-expanded="true"
+                                            aria-controls="collapseTwentyTwo">-->
+                                            Talk: Prof. Dr. Winkler
+                                            <!--<i class="collapse-indicator fas fa-times" aria-hidden="true"></i>-->
+                                        </button>
+                                    </h2>
+                                </div>
+
+                                <div id="collapseTwentyTwo" class="collapse" aria-labelledby="headingTwentyTwo"
+                                    data-parent="#accordion-day-two">
+                                    <div class="card-body">
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                        richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
+                                        brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                                        sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                                        shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson
+                                        cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                                        Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt
+                                        you probably haven't heard of them accusamus labore sustainable VHS.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingTwentyThree">
+                                    <h2 class="mb-0">
+                                        <span class="schedule-time">10:30</span>
+                                        <button class="btn btn-link collapsed" type="button"> <!--data-toggle="collapse"
+                                            data-target="#collapseTwentyThree" aria-expanded="true"
+                                            aria-controls="collapseTwentyThree">-->
+                                            Talk: Prof. Dr. Winterpacht
+                                            <!--<i class="collapse-indicator fas fa-times" aria-hidden="true"></i>-->
+                                        </button>
+                                    </h2>
+                                </div>
+
+                                <div id="collapseTwentyThree" class="collapse" aria-labelledby="headingTwentyThree"
+                                    data-parent="#accordion-day-two">
+                                    <div class="card-body">
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                        richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
+                                        brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                                        sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                                        shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson
+                                        cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                                        Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt
+                                        you probably haven't heard of them accusamus labore sustainable VHS.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingTwentyFour">
+                                    <h2 class="mb-0">
+                                        <span class="schedule-time">11:15</span>
+                                        <button class="btn btn-link collapsed" type="button"> <!--data-toggle="collapse"
+                                            data-target="#collapseTwentyFour" aria-expanded="true"
+                                            aria-controls="collapseTwentyFour">-->
+                                            Talk: Prof. Dr. Matthias Peipp
+                                            <!--<i class="collapse-indicator fas fa-times" aria-hidden="true"></i>-->
+                                        </button>
+                                    </h2>
+                                </div>
+
+                                <div id="collapseTwentyFour" class="collapse" aria-labelledby="headingTwentyFour"
+                                    data-parent="#accordion-day-two">
+                                    <div class="card-body">
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                        richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
+                                        brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                                        sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                                        shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson
+                                        cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                                        Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt
+                                        you probably haven't heard of them accusamus labore sustainable VHS.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingTwentyLunch">
+                                    <h2 class="mb-0">
+                                        <span class="schedule-time">12:00</span>
+                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                            data-target="#collapseTwentyLunch" aria-expanded="true"
+                                            aria-controls="collapseTwentyLunch">
+                                            Lunch
+                                        </button>
+                                    </h2>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingTwentyFive">
+                                    <h2 class="mb-0">
+                                        <span class="schedule-time">13:00</span>
+                                        <button class="btn btn-link collapsed" type="button"><!-- data-toggle="collapse"
+                                            data-target="#collapseTwentyFive" aria-expanded="true"
+                                            aria-controls="collapseTwentyFive">-->
+                                            Poster-Session + Workshops
+                                            <!--<i class="collapse-indicator fas fa-times" aria-hidden="true"></i>-->
+                                        </button>
+                                    </h2>
+                                </div>
+
+                                <div id="collapseTwentyFive" class="collapse" aria-labelledby="headingTwentyFive"
+                                    data-parent="#accordion-day-two">
+                                    <div class="card-body">
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                        richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
+                                        brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                                        sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                                        shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson
+                                        cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                                        Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt
+                                        you probably haven't heard of them accusamus labore sustainable VHS.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingTwentySix">
+                                    <h2 class="mb-0">
+                                        <span class="schedule-time">16:00</span>
+                                        <button class="btn btn-link collapsed" type="button"> <!--data-toggle="collapse"
+                                            data-target="#collapseTwentySix" aria-expanded="true"
+                                            aria-controls="collapseTwentySix">-->
+                                            Collaboration Speed-Dating + Workshops
+                                            <!--<i class="collapse-indicator fas fa-times" aria-hidden="true"></i>-->
+                                        </button>
+                                    </h2>
+                                </div>
+
+                                <div id="collapseTwentySix" class="collapse" aria-labelledby="headingTwentySix"
+                                    data-parent="#accordion-day-two">
+                                    <div class="card-body">
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                        richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
+                                        brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                                        sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                                        shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson
+                                        cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                                        Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt
+                                        you probably haven't heard of them accusamus labore sustainable VHS.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingTwentySeven">
+                                    <h2 class="mb-0">
+                                        <span class="schedule-time">18:30</span>
+                                        <button class="btn btn-link collapsed" type="button"> <!--data-toggle="collapse"
+                                            data-target="#collapseTwentySeven" aria-expanded="true"
+                                            aria-controls="collapseTwentySeven">-->
+                                            Collaboration Party
+                                            <!--<i class="collapse-indicator fas fa-times" aria-hidden="true"></i>-->
+                                        </button>
+                                    </h2>
+                                </div>
+
+                                <div id="collapseTwentySeven" class="collapse" aria-labelledby="headingTwentySeven"
+                                    data-parent="#accordion-day-two">
+                                    <div class="card-body">
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                        richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
+                                        brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                                        sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                                        shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson
+                                        cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                                        Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt
+                                        you probably haven't heard of them accusamus labore sustainable VHS.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-3" style="padding-bottom: 30px;">
+                        <div class="schedule-day">
+                            <h2>Day 3</h2>
+                            <div class="schedule-weekday">Sunday</div>
+                            <div class="schedule-date">19.05.2019</div>
+                        </div>
+                    </div>
+
+                    <div class="schedule-programme col-9">
+                        <div class="accordion" id="accordion-day-three">
+                            <div class="card">
+                                <div class="card-header" id="headingThirtyOne">
+                                    <h2 class="mb-0">
+                                        <span class="schedule-time">08:30</span>
+                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                            data-target="#collapseThirtyOne" aria-expanded="true"
+                                            aria-controls="collapseThirtyOne">
+                                            Breakfast
+                                        </button>
+                                    </h2>
+                                </div>
+
+                                <div id="collapseThirtyOne" class="collapse" aria-labelledby="headingOne"
+                                    data-parent="#accordion-day-three">
+                                    <div class="card-body">
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                        richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
+                                        brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                                        sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                                        shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson
+                                        cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                                        Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt
+                                        you probably haven't heard of them accusamus labore sustainable VHS.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card-header" id="headingThirtyTwo">
+                                    <h2 class="mb-0">
+                                        <span class="schedule-time">09:30</span>
+                                        <button class="btn btn-link collapsed" type="button"> <!--data-toggle="collapse"
+                                            data-target="#collapseThirtyTwo" aria-expanded="true"
+                                            aria-controls="collapseThirtyTwo">-->
+                                            Group photo
+                                            <!--<i class="collapse-indicator fas fa-times" aria-hidden="true"></i>-->
+                                        </button>
+                                    </h2>
+                                </div>
+
+                                <div id="collapseThirtyTwo" class="collapse" aria-labelledby="headingThirtyTwo"
+                                    data-parent="#accordion-day-three">
+                                    <div class="card-body">
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                        richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
+                                        brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                                        sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                                        shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson
+                                        cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                                        Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt
+                                        you probably haven't heard of them accusamus labore sustainable VHS.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card-header" id="headingThirtyThree">
+                                    <h2 class="mb-0">
+                                        <span class="schedule-time">10:00</span>
+                                        <button class="btn btn-link collapsed" type="button"><!-- data-toggle="collapse"
+                                            data-target="#collapseThirtyThree" aria-expanded="true"
+                                            aria-controls="collapseThirtyThree">-->
+                                            Poster-Session
+                                            <!--<i class="collapse-indicator fas fa-times" aria-hidden="true"></i>-->
+                                        </button>
+                                    </h2>
+                                </div>
+
+                                <div id="collapseThirtyThree" class="collapse" aria-labelledby="headingThirtyThree"
+                                    data-parent="#accordion-day-three">
+                                    <div class="card-body">
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                        richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
+                                        brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                                        sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                                        shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson
+                                        cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                                        Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt
+                                        you probably haven't heard of them accusamus labore sustainable VHS.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card-header" id="headingThirtyFour">
+                                    <h2 class="mb-0">
+                                        <span class="schedule-time">12:00</span>
+                                        <button class="btn btn-link collapsed" type="button"> <!--data-toggle="collapse"
+                                            data-target="#collapseThirtyFour" aria-expanded="true"
+                                            aria-controls="collapseThirtyFour">-->
+                                            Closing Ceremony
+                                            <!--<i class="collapse-indicator fas fa-times" aria-hidden="true"></i>-->
+                                        </button>
+                                    </h2>
+                                </div>
+
+                                <div id="collapseThirtyFour" class="collapse" aria-labelledby="headingThirtyFour"
+                                    data-parent="#accordion-day-three">
+                                    <div class="card-body">
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                        richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
+                                        brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                                        sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                                        shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson
+                                        cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                                        Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt
+                                        you probably haven't heard of them accusamus labore sustainable VHS.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- WORKSHOPS-->
+    <style>
+        .workshops {
+            margin: 50px 0;
+        }
+
+        .workshops h1 {
+            color: #04CAC6;
+        }
+    </style>
+
+    <a id="workshops"></a>
+    <div class="workshops">
+        <div class="container">
+            <h1>Workshops</h1>
+
+            <div style="text-align: center; margin: 100px 0;">
+            <p>We will soon give some further information on the workshops.</p>
+            <p>If you also want to hold a workshop don't hesitate to <a href="mailto:project-igem@fau.de">contact
+                    us</a>!</p>
+                </div>
+        </div>
+    </div>
+
+
+    <!-- MAP -->
+    <style>
+        .location h1 {
+            color: #73B510;
+        }
+
+        .map {
+            height: 600px;
+            overflow: hidden;
+        }
+
+        .map-responsive {
+            overflow: hidden;
+            padding-bottom: 50%;
+            position: relative;
+            height: 0;
+        }
+
+        .map-responsive iframe {
+            left: 0;
+            top: 0;
+            height: 600px;
+            width: 100%;
+            position: absolute;
+        }
+
+        .contact {
+            padding: 50px 0;
+        }
+
+        .social-media ul {
+            display: inline-block;
+        }
+
+        .social-media li {
+            display: inline-block;
+            list-style: none;
+            margin: 5px;
+        }
+
+        .social-media a {
+            font-size: 32px;
+            margin: 0 0px 0 0;
+            text-decoration: none;
+        }
+
+        .image-1 {
+            width: 350px;
+            margin: 10px;
+            -webkit-transform: rotate(2deg);
+            -moz-transform: rotate(2deg);
+            -ms-transform: rotate(2deg);
+            -o-transform: rotate(2deg);
+            transform: rotate(2deg);
+            transition: all .5s ease-in-out;
+            box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.05);
+        }
+
+        .image-1:hover {
+            width: 370px;
+            margin: 0;
+            -webkit-transform: rotate(1deg);
+            -moz-transform: rotate(1deg);
+            -ms-transform: rotate(1deg);
+            -o-transform: rotate(1deg);
+            transform: rotate(3deg);
+            box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.1);
+        }
+
+        .image-2 {
+            width: 320px;
+            margin: 10px;
+            -webkit-transform: rotate(-3deg);
+            -moz-transform: rotate(-3deg);
+            -ms-transform: rotate(-3deg);
+            -o-transform: rotate(-3deg);
+            transform: rotate(-3deg);
+            transition: all .5s ease-in-out;
+            box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.05);
+        }
+
+        .image-2:hover {
+            width: 340px;
+            margin: 0;
+            -webkit-transform: rotate(-1deg);
+            -moz-transform: rotate(-1deg);
+            -ms-transform: rotate(-1deg);
+            -o-transform: rotate(-1deg);
+            transform: rotate(-1deg);
+            box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.1);
+        }
+    </style>
+
+    <a id="location"></a>
+    <div class="location">
+        <div class="container">
+
+            <h1>Location</h1>
+
+            <div class="row" style="margin-top: 20px;">
+                <div class="col-lg-8">
+                        <h5>Erlangen</h5>
+
+                        The meetup is taking place in our lovely hometown Erlangen and is located in Bavaria, between Nuremberg 
+                        and Bamberg. Around 35% of the people living here are students, so the spirit is really 
+                        relaxed and we definitely have many bars and breweries – you gonna love our beer! Erlangen is also 
+                        known for the big amount of bicyclist, so we have really nice air and it’s so much fun to chill in the 
+                        palace garden while having a picnic. But don’t be afraid if you come here and of course can’t bring your 
+                        own bicycle- you can get everywhere interesting with the bus! Do you already know the Bavarian kitchen? 
+                        If you haven’t, be prepared for tasty sausages, schäuferle and dumplings!
+                </div>
+
+                <div class="gallery col-lg-4" style="margin-top: -10px; height: 220px;">
+                    <img src="assets/images/erlangen.jpg" class="rounded-lg image-1" />
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-8">
+                    <h5 style="padding-top: 30px;">FAU</h5>
+
+                    FAU stands for Friedrich-Alexander university, named after the two founders. As there are 40 000 students, 
+                    the FAU is the third largest university of Bavaria and offers 261 degree courses. This winter semester 2018/2019 
+                    a new elite master degree course “Integrated Immunology” was initiated, in which 10 members of our iGEM Team 
+                    Erlangen are participating. For the FAU research and development, just as international cooperation are very 
+                    fundamental principles. According to that there are 500 partnerships with universities all over the world.
+                </div>
+
+                <div class="gallery col-lg-4" style="margin-top: -15px; padding-left: 40px; height: 350px;">
+                    <img src="assets/images/biologikum.jpg" class="rounded-lg image-2" />
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="map">
+        <div class="container-fluid" style="padding: 0">
+            <div class="map-responsive">
+                <iframe
+                    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&amp;q=Naturwissenschaftliche+Fakultaet+Erlangen"
+                    width="600" height="250" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- CONTACT -->
+    <div class="contact">
+        <div class="container">
+            <h1>Get in touch</h1>
+
+            <div class="row">
+                <div class="col-lg-8">
+                    <div><img src="assets/images/igem_erlangen.png" style="height: 150px;" /></div>
+
+                    <a href="mailto:project-igem@fau.de"><i class="fa fa-envelope"></i> project-igem@fau.de</a>
+
+                </div>
+                <div class="col-lg-4">
+                    Social Media
+                    <ul class="social-media">
+                        <li><a href="#" class="fab fa-facebook">&nbsp;</a></li>
+                        <li><a href="#"><i class="fab fa-instagram">&nbsp;</i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter">&nbsp;</i></a></li>
+                        <li><a href="#"><i class="fab fa-youtube">&nbsp;</i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a id="scroll-to-top" class="floating-off" href="#top"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+#stickyHeader {
+    position: fixed;
+    transition: top 0.2s linear;
+    width: 100%;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+    z-index: 9001; 
+}
+  
+.sticky-off {
+    top: -84px;
+    opacity: 0; 
+}
+  
+.sticky-on {
+    top: 0;
+    opacity: 1; 
+}
+
+#scroll-to-top,
+#scroll-to-top:visited {
+  background-image: linear-gradient(-134deg, #1DD8C9 0%, #33D2D3 20%, #40CCDD 40%, #4AC6E7 60%, #51C0F1 80%, #56BAFB 100%);
+  box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 40px;
+  color: white;
+  font-size: 36px;
+  width: 48px;
+  height: 48px;
+  text-align: center;
+  position: fixed;
+  bottom: 42px;
+  right: 42px;
+  transition: opacity 0.2s linear; 
+}
+
+#scroll-to-top:hover {
+  color: white !important;
+  opacity: 1;
+}
+
+#scroll-to-top i {
+  position: absolute;
+  top: 4px;
+  left: 13px; 
+}
+
+.floating-off {
+  opacity: 0 !important;
+  visibility: hidden; 
+}
+
+.floating-on {
+  opacity: 0.8 !important;
+  visibility: visible; 
+}

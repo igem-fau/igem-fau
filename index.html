@@ -882,12 +882,57 @@
             color: #04CAC6;
             margin-top: 80px;
         }
+
+        .workshop-card {
+            display: block;
+            float: left;
+            height: 300px;
+            border-radius: 5px;
+            background: white;
+            padding: 20px;
+            margin: 20px;
+            box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.1);
+        }
+
+        .workshop-card:hover {
+            box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.15);
+        }
+
+        .workshop-card strong {
+            display: inline-block;
+            color: rgb(12, 165, 162);
+            font-size: 1.2em;
+            height: 70px;
+        }
     </style>
 
     <a id="workshops"></a>
     <div class="workshops">
         <div class="container">
             <h1>Workshops</h1>
+
+            <div>
+
+                <div class="col-12 col-lg-3 workshop-card">
+                    <strong>Deep Learning</strong>
+
+                    <p>Machine Learning is quickly becoming one of the research areas with massive impacts in any discipline. Get an overview over some of the most important techniques and how it can be applied in practise...</p>
+                </div>
+
+                <div class="col-12 col-lg-3 workshop-card">
+                    <strong>iGEM Wikis, HTML and CSS for beginners</strong>
+
+                    <p>Wiki Freeze is an incredibly stressful part of iGEM, especially if you are new to HTML and CSS. In this workshop, learn some of the basics to be properly equipped for Wiki Freeze.</p>
+                </div>
+
+                <div class="col-12 col-lg-3 workshop-card">
+                    <strong>Brewing of beer</strong>
+
+                    <p>Get the chance to learn about how to brew beer from an expert. Our region has well over 250 breweries and over 1,000 different beers so we certainly know our ways...</p>
+                </div>
+
+            </div>
+            <div style="clear: both;"></div>
 
             <div style="text-align: center; margin: 100px 0;">
             <p>We will soon give some further information on the workshops.</p>
